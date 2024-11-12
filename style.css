@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+}
+.logo{
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* TODO: Complétez les styles pour la barre de navigation supérieure */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #CCCCCC;
+    padding: 10px;
+    align-items: center;
+}
+
+nav div span{
+    padding-right: 20px;
+}
+
+
+.content {
+    margin-top: 20px;
+}
+
+/* TODO: Complétez les styles pour la barre de filtrage */
+.filter-bar {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+/* TODO: Complétez les styles pour la zone de contenu des produits */
+.product-content {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+
+/* TODO: Complétez les styles pour les cartes de produits */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    border: solid 2px #AF2323;
+    border-radius: 8px;
+    padding: 10px;
+    width: 23%;
+    margin-top: 20px ;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Style pour l'image du produit */
+.product-card img {
+    align-self: center;
+    padding: 5px;
+    width: 200px;
+    height: 180px;
+}
+
+/* Style pour les informations du produit */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.product-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    align-self: flex-end;
+}
+
+
+
+/* Style pour le bouton d'ajout au panier */
+.product-card button {
+    width: 30px;
+    padding: 10px;
+    background-color: #6F4E37; /* Couleur café */
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: auto; /* Pousse le bouton vers le bas */
+    align-self: center;
+}
+
+.product-card button:hover {
+    background-color: #5D4037; /* Couleur café plus foncée au survol */
+}
+
+
+
+/*CSS pour le formulaire de recherche*/
+.search-container {
+    margin-bottom: 20px;
+}
+
+#search-form {
+    display: flex;
+    gap: 10px;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#search-form button {
+    padding: 10px 20px;
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#search-form button:hover {
+    background-color: #5D4037;
+}
+
+
